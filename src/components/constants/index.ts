@@ -1,4 +1,3 @@
-import homePagePoulet from "@/assets/homePagePoulet.jpg";
 import viandeCuiteA from "@/assets/viandeCuiteA.png";
 import viandenoCuiteA from "@/assets/viandenoCuiteA.png";
 import oeufs from "@/assets/oeufs.png";
@@ -13,6 +12,7 @@ import { IFooterLinks } from "@/types";
 
 export const URL_MEDIA = {
     TEAM_IMAGE: "https://res.cloudinary.com/chanel-muhesi/image/upload/v1703227010/poules/team_xopyyp.jpg",
+    CHICKENS_IMAGE: "https://res.cloudinary.com/chanel-muhesi/image/upload/v1703199446/poules/poulaller_ey4s47.jpg"
 }
 
 export const dataCards = [
