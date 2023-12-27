@@ -6,6 +6,8 @@ import HomePageTwoChickens from "@/assets/twoChickens.png";
 import Logo from "@/components/Logo";
 import OurVision from "@/components/home/ourVisionSection";
 import Resume from "@/components/home/resumeSection";
+import Products from "@/components/home/productSection";
+import ShowVideo from "@/components/home/VideoSection";
 
 const HomePage = () => {
     return (
@@ -54,16 +56,12 @@ const HomePage = () => {
                             </AnchorLink>
                         </motion.div>
                     </div>
-                    <div
-                        className="flex basis-3/5 justify-center md:z-10
-              md:ml-40 md:mt-16 md:justify-items-end"
-                    >
+                    <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
                         <img className="w-[900px]"
                             alt="home-pageGraphic" src={HomePageTwoChickens} />
                         <img className="w-[500px] "
                             style={{
                                 transform: 'translate(-50%, -20%)',
-
                             }}
                             alt="..." src={ArrowImg} />
                     </div>
@@ -74,6 +72,12 @@ const HomePage = () => {
             </section>
             <section>
                 <Resume />
+            </section>
+            <section>
+                <Products />
+            </section>
+            <section>
+                <ShowVideo />
             </section>
         </section>
     );
