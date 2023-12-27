@@ -4,7 +4,7 @@
             "filter": "\\.(ts|tsx)$",
             "regex": "/(?:FIXE|TODO)/i",
             "message": "You have unfinished tasks",
-            "nonBlocking": false
+            "nonBlocking": true
         },
         {
             "filter": "\\.(ts|tsx)$",

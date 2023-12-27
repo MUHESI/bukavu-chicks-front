@@ -24,6 +24,7 @@ function App() {
     <div className="app bg-gray-20 flex flex-col justify-between min-h-screen">
       <div className="bg-gray-20 flex-grow mt-6">
         <div className="w-[90%]  mx-auto my-6">
+          <Navbar />
           <GlobalRoutes />
         </div>
       </div>
