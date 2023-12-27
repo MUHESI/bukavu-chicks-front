@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo ===== PRE-COMMIT CHECKS =====
+# npm test
+# echo' commit in progress'
+# yarn lint
+npx --no-install git-precommit-checks
+# npx --no-install lint-staged
