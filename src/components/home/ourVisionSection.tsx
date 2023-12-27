@@ -1,5 +1,5 @@
 import React from 'react'
-import { FirstHeading } from '../core/heading'
+import { FirstHeading, HText } from '../core/heading'
 import ButtonCustom from '../core/buttonCustom'
 import { useNavigate } from 'react-router-dom'
 import { URL_MEDIA } from '../constants'
@@ -9,7 +9,7 @@ function OurVision() {
     return (
         <div className='p-5 pb-16  my-10 rounded-xl mb-20'>
             <div className='text-center'>
-                <FirstHeading title='Notre vision' />
+                <HText>Notre vision</HText>
                 <p className='my-2  mx-auto max-w-[650px]' >
                     Notre vision chez BUKAVU Chicks, nous vous offrons tout une gamme des produits et les services, Vous trouverez les produits comme , hjdcu cdoiclkvdsudi udsiop
                 </p>
@@ -17,7 +17,8 @@ function OurVision() {
             <div className='relative w-full min-h-[350px]'
                 style={{
                     backgroundImage: `url(${URL_MEDIA.TEAM_IMAGE})`,
-                    backgroundColor: "rgba(0, 0, 0, 0.25)",
+                    backgroundColor: "rgba(0, 0, 0, 0.35)",
+                    backgroundSize: "cover",
                     backgroundBlendMode: "multiply"
                 }}
             >

@@ -5,7 +5,7 @@ import ButtonCustom from '../core/buttonCustom';
 
 function Resume() {
     return (
-        <div className=" shadow rounded  bg-primary-100 ">
+        <div className=" shadow bg-primary-100 mt-[120px] sm:mt-5 rounded ">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -17,6 +17,7 @@ function Resume() {
                 }}
             >
                 <h2 className='text-center text-2xl font-bold py-2'>Ce que nous faisons </h2>
+
                 {[1, 2, 4, 5].map((item, key) => <div className="my-4 bg-primary-100 p-2 px-5 flex items-center gap-2 border-b border-secondary-500 hover:shadow-md hover:scale-[1.03] transition" >
                     <IoCheckmarkDoneCircleOutline size={55} />
                     <p>

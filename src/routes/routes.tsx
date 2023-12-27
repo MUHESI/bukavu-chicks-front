@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import HomePage from '@/pages/home'
+import ListProducts from '../pages/products'
 
 function GlobalRoutes() {
   return (
@@ -7,6 +8,8 @@ function GlobalRoutes() {
       <Routes>
         {/* PUBLIC ROUTES */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/products/" element={<ListProducts />} />
+
       </Routes>
     </div>
   )
