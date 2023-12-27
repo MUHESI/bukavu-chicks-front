@@ -1,3 +1,4 @@
+// export { } from './commonType'
 import type React from 'react'
 
 export interface IFooterLinks {
