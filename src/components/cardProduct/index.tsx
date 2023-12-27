@@ -5,7 +5,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useNavigate } from "react-router-dom";
 import ImageCustom from "../core/imageCustom";
 
-
 const childVariant = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1 },
@@ -26,7 +25,7 @@ const ProductCard = ({ img, title, description, setSelectedPage }: Props) => {
         >
             <div className="mb-4 flex justify-center">
                 <div className="rounded-full border-2 border-gray-100  p-4">
-                    <ImageCustom src={img} alt="..." />
+                    <ImageCustom src={img} alt="..." className="bg-primary-100" />
                 </div>
             </div>
             <h4 className="font-bold">{title}</h4>

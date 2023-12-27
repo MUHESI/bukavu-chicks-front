@@ -1,7 +1,5 @@
 import React from "react";
-import { useRecoilValue, useSetRecoilState } from "recoil";
 import { FiRefreshCcw } from "react-icons/fi";
-// import { cn } from '@/lib/utils';
 import { cn } from '../../lib/utils';
 interface IPropsButton {
   statusLoading?: boolean;
