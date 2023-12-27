@@ -3,6 +3,7 @@ import { FirstHeading } from '../core/heading'
 import ButtonCustom from '../core/buttonCustom'
 import { useNavigate } from 'react-router-dom'
 import { URL_MEDIA } from '../constants'
+
 function OurVision() {
     const navigate = useNavigate()
     return (

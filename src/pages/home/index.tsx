@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import ArrowImg from "@/assets/Sparkles.png";
 import HomePageTwoChickens from "@/assets/twoChickens.png";
 import Logo from "@/components/Logo";
-import OurVision from "@/components/home/OurVisionSection";
+import OurVision from "@/components/home/ourVisionSection";
+import Resume from "@/components/home/resumeSection";
 
 const HomePage = () => {
     return (
@@ -70,6 +71,9 @@ const HomePage = () => {
             </section>
             <section>
                 <OurVision />
+            </section>
+            <section>
+                <Resume />
             </section>
         </section>
     );
