@@ -30,7 +30,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
-            <Logo />
+            <button onClick={() => navigate('/')}
+              title='Home'
+            >
+              <Logo />
+            </button>
 
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} `}>
@@ -94,30 +98,20 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           {/* MENU ITEMS */}
           <div
-            onClick={() => setIsMenuToggled(!isMenuToggled)}
-            className="ml-[33%] flex flex-col gap-10 text-2xl"
+            // onClick={() => setIsMenuToggled(!isMenuToggled)}
+            className="  flex flex-col gap-12 items-center "
           >
             <Link
               page="Accueil"
               link="/"
               selectedPage={selectedPage}
             />
-            {/* <NavbarMenu mainTitle="Produits" links={datLinksProducts} />
-            <NavbarMenu mainTitle="Partenariants" links={datLinksPartners} />
-            <NavbarMenu mainTitle="Shop" links={datLinksShop} /> */}
-            {/* <Link
-              link="/shop"
-              page="Commander"
-              selectedPage={selectedPage}
-            />
-            <span
-              className={`cursor-pointer text-primary-500 transition duration-500 hover:text-primary-300 `}
-              onClick={() => navigate('/')}
-            >
-              Hello, MUHESI
-            </span> */}
+            <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Shop" links={datLinksShop} onClick={() => setIsMenuToggled(!isMenuToggled)} />
+            <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Produits" links={datLinksProducts} onClick={() => setIsMenuToggled(!isMenuToggled)} />
+            <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Partenariants" links={datLinksPartners} onClick={() => setIsMenuToggled(!isMenuToggled)} />
+            <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Shop" links={datLinksShop} onClick={() => setIsMenuToggled(!isMenuToggled)} />
           </div>
-          <div className={`mt-5 flex justify-center gap-8`}>
+          <div className={`mt-10 flex justify-center gap-8`}>
             <button className=""
               onClick={() => navigate('/list-command')}
             >

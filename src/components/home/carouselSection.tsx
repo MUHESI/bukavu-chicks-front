@@ -71,7 +71,6 @@ function Carousel() {
                     <div className="item">
                         <img src={jengaMwili} alt="..." />
                         <div className="introduce">
-                            {/* <div className="title">DESIGN SLIDER</div> */}
                             <div className="topic">Jenga Mwili</div>
                             <div className="des">
                                 {/* <!-- 20 lorem --> */}

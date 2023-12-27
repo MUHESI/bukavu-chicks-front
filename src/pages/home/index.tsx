@@ -37,7 +37,7 @@ const HomePage = () => {
                                 <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                                     <span className="text-3xl">
                                         Chaque chose est bon avec
-                                        <p className=" ml-10 text-5xl font-bold">
+                                        <p className=" ml-10  md:text-5xl font-bold">
                                             <Logo />
                                         </p>
                                     </span>
@@ -76,7 +76,7 @@ const HomePage = () => {
             <section>
                 <Products />
             </section>
-            <section>
+            <section className="hidden md:block transition">
                 <ShowVideo />
             </section>
         </section>

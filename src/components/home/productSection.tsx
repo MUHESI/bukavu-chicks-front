@@ -21,7 +21,7 @@ const Products = () => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <HText>NOS PRODUITS </HText>
+                    <HText>Nos produits </HText>
                     <p className="my-5 text-sm">
                         Chez <Logo />  nous vous offrons tout une gamme des produits et les services, Vous trouverez tous nos  produits en cliquant sur voir plus :
                     </p>
