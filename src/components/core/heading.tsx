@@ -4,7 +4,7 @@ interface IHeadingProps {
   title: string
   className?: string
 }
-function MainHeading ({ title }: IHeadingProps) {
+function MainHeading({ title }: IHeadingProps) {
   return (
     <ContentTitle>
       <h1> {title || 'Add a title'} </h1>
@@ -14,7 +14,7 @@ function MainHeading ({ title }: IHeadingProps) {
 
 export default MainHeading
 
-export function FirstHeading ({ title }: IHeadingProps) {
+export function FirstHeading({ title }: IHeadingProps) {
   return (
     <ContentTitle>
       <h2 className="text-4xl font-bold"> {title || ''} </h2>
@@ -22,7 +22,7 @@ export function FirstHeading ({ title }: IHeadingProps) {
   )
 }
 
-export function SecondHeading ({ title }: IHeadingProps) {
+export function SecondHeading({ title }: IHeadingProps) {
   return (
     <ContentTitle>
       <h3 className="font-bold"> {title || 'Add a title'} </h3>
@@ -30,7 +30,7 @@ export function SecondHeading ({ title }: IHeadingProps) {
   )
 }
 
-export function LastHeading ({ title, className }: IHeadingProps) {
+export function LastHeading({ title, className }: IHeadingProps) {
   return (
     <ContentTitle>
       <h4 className={`${className} font-bold text-sm`}>
@@ -40,6 +40,17 @@ export function LastHeading ({ title, className }: IHeadingProps) {
     </ContentTitle>
   )
 }
+
+interface Props {
+  children: React.ReactNode
+}
+
+export const HText = ({ children }: Props) => {
+  return (
+    <h1 className="basis-3/5 font-montserrat text-3xl font-bold">{children}</h1>
+  )
+}
+
 export const ContentTitle = styled.div`
   // margin: 10px;
   // margin-top: 4px;
