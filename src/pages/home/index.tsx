@@ -1,11 +1,16 @@
-import React from 'react'
+import Carousel from "@/components/home/carousel";
 
-function HomePage() {
+const HomePage = () => {
     return (
-        <div>
+        <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+            {/* CAROUSEL*/}
+            <section>
+                <Carousel />
+            </section>
+            {/* IMAGE AND MAIN HEADER */}
 
-        </div>
-    )
-}
+        </section >
+    );
+};
 
-export default HomePage
+export default HomePage;

@@ -1,4 +1,4 @@
-import { SelectedPage } from "@/shared/types";
+import { SelectedPage } from "@/types";
 import { useNavigate } from "react-router-dom";
 
 type Props = {
