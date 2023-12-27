@@ -11,7 +11,7 @@ interface IProps {
 function ImageCustom({ src, className, alt }: IProps) {
     return (
         <img src={src} alt={alt || "..."} className={cn(
-            "cover bg-primary-100 rounded-full ",
+            "cover  rounded-full ",
             className
         )} />
     )
