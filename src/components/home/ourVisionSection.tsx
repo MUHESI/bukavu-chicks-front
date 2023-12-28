@@ -1,5 +1,5 @@
 import React from 'react'
-import { FirstHeading, HText } from '../core/heading'
+import { HText } from '../core/heading'
 import ButtonCustom from '../core/buttonCustom'
 import { useNavigate } from 'react-router-dom'
 import { URL_MEDIA } from '../constants'
@@ -31,7 +31,7 @@ function OurVision() {
                             <ButtonCustom
                                 className='bg-secondary-100 hover:bg-transparent'
                                 label='Lire plus'
-                                onClick={() => navigate('/vision')}
+                                onClick={() => navigate('/detailVision')}
                             />
                         </div>
                     </div>

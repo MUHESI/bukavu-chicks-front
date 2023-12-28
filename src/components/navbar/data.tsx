@@ -1,11 +1,10 @@
 
 import { FaProductHunt } from "react-icons/fa";
 
-
 export const datLinksProducts = [
     {
         icon: <FaProductHunt />,
-        link: 'shop',
+        link: 'market',
         label: " Commander maint."
     },
     {
@@ -17,12 +16,12 @@ export const datLinksProducts = [
 export const datLinksPartners = [
     {
         icon: <FaProductHunt />,
-        link: 'shop',
+        link: 'market',
         label: " Nos partenaires"
     },
     {
         icon: <FaProductHunt />,
-        link: 'shop',
+        link: 'market',
         label: "Nous supporter"
     },
 
@@ -31,12 +30,12 @@ export const datLinksPartners = [
 export const datLinksShop = [
     {
         icon: <FaProductHunt />,
-        link: 'shop',
+        link: 'market',
         label: "Commander maint."
     },
     {
         icon: <FaProductHunt />,
-        link: 'shop',
+        link: 'market/commands',
         label: "Mes commandes"
     },
 
