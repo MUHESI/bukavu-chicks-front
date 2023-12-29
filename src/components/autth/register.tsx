@@ -101,7 +101,7 @@ function Register({ handleScreen }: {
                                 })
                             }
                             type={`${showPswd ? "text" : "password"}`}
-                            pl="Ton mot de passe"
+                            pl="Confirmer le mot de passe"
                         />
                         <span
                             data-testid="eye-icon"

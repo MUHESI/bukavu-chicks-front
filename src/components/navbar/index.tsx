@@ -44,13 +44,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     page="Accueil"
                     selectedPage={selectedPage}
                   />
-
                   <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Produits" links={datLinksProducts} />
                   <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Partenariants" links={datLinksPartners} />
                   <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Shop" links={datLinksShop} />
                   <span
                     className={`border border-secondary-100 px-2 text-white hover:text-white  hover:bg-secondary-500 rounded-full cursor-pointer text-primary-500 transition duration-500`}
-                    onClick={() => navigate('/')}
+                    onClick={() => navigate('/user/profile/1')}
                   >
                     Hello, MUHESI
                   </span>
@@ -94,21 +93,36 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           {/* MENU ITEMS */}
           <div
             // onClick={() => setIsMenuToggled(!isMenuToggled)}
-            className="  flex flex-col gap-12 items-center "
-          >
-            <Link
-              page="Accueil"
-              link="/"
-              selectedPage={selectedPage}
-            />
+            className="  flex flex-col gap-8 items-center">
+            <span
+              className={`px-2 text-white hover:text-white  hover:bg-secondary-500 rounded-full cursor-pointer text-primary-500 transition duration-500`}
+              onClick={() => {
+                navigate('/')
+                setIsMenuToggled(!isMenuToggled)
+              }}
+            >Accueil
+            </span>
             <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Shop" links={datLinksShop} onClick={() => setIsMenuToggled(!isMenuToggled)} />
             <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Produits" links={datLinksProducts} onClick={() => setIsMenuToggled(!isMenuToggled)} />
             <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Partenariants" links={datLinksPartners} onClick={() => setIsMenuToggled(!isMenuToggled)} />
             <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Shop" links={datLinksShop} onClick={() => setIsMenuToggled(!isMenuToggled)} />
+            <span
+              className={`border border-secondary-100 px-2 text-white hover:text-white  hover:bg-secondary-500 rounded-full cursor-pointer text-primary-500 transition duration-500`}
+              onClick={() => {
+                setIsMenuToggled(!isMenuToggled)
+                navigate('/user/profile/1')
+              }}
+            >
+              Hello, MUHESI
+            </span>
           </div>
           <div className={`mt-10 flex justify-center gap-8`}>
             <button className=""
-              onClick={() => navigate('/market/commands')}
+              onClick={() => {
+                setIsMenuToggled(!isMenuToggled)
+                navigate('/market/commands')
+              }
+              }
             >
               <FiShoppingCart />
             </button>

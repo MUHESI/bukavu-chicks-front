@@ -4,6 +4,7 @@ import ListProducts from '@/pages/products'
 import Market from '@/pages/market'
 import DetailVision from '@/pages/detailVision'
 import ListCommand from '@/pages/listCommand'
+import ProfileUser from '@/pages/profileUser'
 
 function GlobalRoutes() {
   return (
@@ -15,6 +16,7 @@ function GlobalRoutes() {
         <Route path="/market/" element={<Market />} />
         <Route path="/detailVision/" element={<DetailVision />} />
         <Route path="/market/commands/" element={<ListCommand />} />
+        <Route path="/user/profile/:id/" element={<ProfileUser />} />
       </Routes>
     </div>
   )
