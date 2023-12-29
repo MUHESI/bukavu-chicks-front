@@ -1,15 +1,13 @@
 import React from "react";
-import { BsQuestionCircle } from "react-icons/bs";
 import { cn } from "@/lib/utils";
-
-interface IpropsInputAuth {
+interface IpropsInput {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  type: string;
+  type: "text" | "password" | "email" | "number";
   pl: string;
   className?: string;
 }
-function InputAuth({ className, value, onChange, type, pl }: IpropsInputAuth) {
+function InputAuth({ className, value, onChange, type, pl }: IpropsInput) {
   return (
     <input
       value={value}
@@ -20,4 +18,7 @@ function InputAuth({ className, value, onChange, type, pl }: IpropsInputAuth) {
     />
   );
 }
+
 export { InputAuth };
+
+

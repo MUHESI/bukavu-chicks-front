@@ -12,7 +12,11 @@ import { IFooterLinks } from "@/types";
 
 export const URL_MEDIA = {
     TEAM_IMAGE: "https://res.cloudinary.com/chanel-muhesi/image/upload/v1703227010/poules/team_xopyyp.jpg",
-    CHICKENS_IMAGE: "https://res.cloudinary.com/chanel-muhesi/image/upload/v1703199446/poules/poulaller_ey4s47.jpg"
+    CHICKENS_IMAGE: "https://res.cloudinary.com/chanel-muhesi/image/upload/v1703199446/poules/poulaller_ey4s47.jpg",
+    AVATAR_USER: 'https://res.cloudinary.com/chanel-muhesi/image/upload/v1646826119/cresJoinAfrik/user_ifzful.png',
+    USER_IMG_PROFILE2: 'https://res.cloudinary.com/chanel-muhesi/image/upload/v1676725367/porfolio/profile-pic_2_a7jub9.png',
+
+
 }
 
 export const dataCards = [
