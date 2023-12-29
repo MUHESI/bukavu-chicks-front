@@ -1,5 +1,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
+
 interface IpropsInput {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -7,7 +8,7 @@ interface IpropsInput {
   pl: string;
   className?: string;
 }
-function InputAuth({ className, value, onChange, type, pl }: IpropsInput) {
+export function InputAuth({ className, value, onChange, type, pl }: IpropsInput) {
   return (
     <input
       value={value}
@@ -18,7 +19,3 @@ function InputAuth({ className, value, onChange, type, pl }: IpropsInput) {
     />
   );
 }
-
-export { InputAuth };
-
-

@@ -7,7 +7,7 @@ import DialogCustom from '@/components/core/dialogCustom';
 function ListCommand() {
     return (
         <div className="p-5  py-10 md:pb-0">
-            <h2 className='font-bold text-2xl text mb-4'>Commande</h2>
+            <h2 className='font-bold text-xl text mb-4'>Commande</h2>
             <div>
                 <main className='mt-15'>
                     {dataCommands.products.map((item, key) =>

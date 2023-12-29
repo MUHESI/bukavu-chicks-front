@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import picture from '@/assets/viandeCuiteA.png'
 import { SiNamebase } from "react-icons/si";
-import { InputAuth } from '@/components/core/Inputs';
 import { MdAlternateEmail, MdLockOutline } from "react-icons/md";
 import { BtnAuth, ScreenType } from '.';
 import { BiShow } from 'react-icons/bi';
 import { FaEyeSlash } from 'react-icons/fa';
+import { InputAuth } from '../core/InputsCustom';
 
 function Register({ handleScreen }: {
     handleScreen: (val: ScreenType) => void
@@ -15,7 +15,6 @@ function Register({ handleScreen }: {
         pswd: ''
     });
     const [showPswd, setShowPswd] = useState(false);
-
     return (
         <div className=''>
             <div className="text-center flex justify-center">
@@ -127,5 +126,4 @@ function Register({ handleScreen }: {
         </div>
     )
 }
-
 export default Register

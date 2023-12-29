@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 interface Props {
   children: React.ReactNode
@@ -15,5 +15,4 @@ const ActionButton = ({ children, btnAction }: Props) => {
     </button>
   )
 }
-
 export default ActionButton

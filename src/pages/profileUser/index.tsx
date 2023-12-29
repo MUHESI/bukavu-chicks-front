@@ -12,7 +12,6 @@ import { commonClass, commonClassSection } from "./style";
 function ProfileUser() {
   const { idUser } = useParams();
 
-
   return (
     <div className="w-full py-10 md:w-[75%] m-auto">
       <div className="p-1 text-main-color-dark">
