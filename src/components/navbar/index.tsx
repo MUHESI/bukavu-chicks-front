@@ -44,25 +44,20 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     page="Accueil"
                     selectedPage={selectedPage}
                   />
-                  {/* <Link
-                    link="/shop"
-                    page="Commander"
-                    selectedPage={selectedPage}
-                  /> */}
 
                   <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Produits" links={datLinksProducts} />
                   <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Partenariants" links={datLinksPartners} />
                   <NavbarMenu isTopOfPage={isTopOfPage} mainTitle="Shop" links={datLinksShop} />
-                  {/* <span
-                    className={`cursor-pointer text-primary-500 transition duration-500 hover:text-primary-300 `}
+                  <span
+                    className={`border border-secondary-100 px-2 text-white hover:text-white  hover:bg-secondary-500 rounded-full cursor-pointer text-primary-500 transition duration-500`}
                     onClick={() => navigate('/')}
                   >
                     Hello, MUHESI
-                  </span> */}
+                  </span>
                 </div>
                 <div className={` ml-10 flex justify-end gap-8`}>
                   <button className=""
-                    onClick={() => navigate('/list-command')}
+                    onClick={() => navigate('/market/commands')}
                   >
                     <FaCartShopping
                       size={20}
@@ -113,10 +108,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
           <div className={`mt-10 flex justify-center gap-8`}>
             <button className=""
-              onClick={() => navigate('/list-command')}
+              onClick={() => navigate('/market/commands')}
             >
               <FiShoppingCart />
             </button>
+
 
           </div>
         </div>

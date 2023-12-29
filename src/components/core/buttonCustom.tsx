@@ -8,7 +8,7 @@ interface IPropsButton {
   disabled?: boolean;
   className?: string;
 }
-function ButtonCusrom({
+function ButtonCustom({
   statusLoading,
   onClick,
   label,
@@ -37,4 +37,4 @@ function ButtonCusrom({
   );
 }
 
-export default ButtonCusrom
+export default ButtonCustom

@@ -12,17 +12,15 @@ body,
   width: 100%;
   font-family: "DM Sans", sans-serif;
   @apply text-gray-500;
-}
-
- 
-.mainScrollbar::-webkit-scrollbar {
+} 
+/* .mainScrollbar::-webkit-scrollbar {
  height: 4px;
  border-radius: 5px;
  background-color:#FF6B66;
-}
+} */
 
 
-.btn {
+/* .btn {
   background: #FFC132;
   position: relative;
   color: white;
@@ -34,11 +32,9 @@ body,
 }
 .btn:hover{
   background: none;
+} */
 
-
-}
-
-.btn::before{
+/* .btn::before{
   background: #FF6B66;
   content: "";
   position: absolute;
@@ -50,8 +46,12 @@ body,
   width: 120%;
   height: 0%;
   transform: translate(-50%, -50%) rotate(25deg);
-}
-
+} 
 .btn:hover::before {
   height: 350%;
-} 
+}  */
+
+/* input[type="email"]:active + input[type="password"]:focus {
+  background: none;
+  color:red
+} */

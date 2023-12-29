@@ -1,7 +1,7 @@
 import React from 'react'
 import videoBukavuChicks from '@/assets/video/videoBukavuChicks.mp4'
-import Logo from '@/scenes/Logo'
 import { motion } from "framer-motion";
+import Logo from '../Logo';
 
 function ShowVideo() {
     return (
@@ -11,7 +11,6 @@ function ShowVideo() {
                 <video
                     style={{
                         left: 0,
-                        // backgroundImage: "url(https://res.cloudinary.com/chanel-muhesi/image/upload/v1703227010/poules/team_xopyyp.jpg)",
                         backgroundColor: "rgba(0, 0, 0, 0.5)",
                         backgroundBlendMode: "multiply"
                     }}

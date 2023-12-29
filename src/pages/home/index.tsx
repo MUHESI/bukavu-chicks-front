@@ -7,7 +7,7 @@ import Logo from "@/components/Logo";
 import OurVision from "@/components/home/ourVisionSection";
 import Resume from "@/components/home/resumeSection";
 import Products from "@/components/home/productSection";
-import ShowVideo from "@/components/home/VideoSection";
+import ShowVideo from "@/components/home/videoSection";
 
 const HomePage = () => {
     return (
@@ -82,5 +82,4 @@ const HomePage = () => {
         </section>
     );
 };
-
 export default HomePage;

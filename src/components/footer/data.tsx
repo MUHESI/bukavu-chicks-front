@@ -2,11 +2,7 @@ import { IFooterLinks } from "@/types";
 export const footerLinks: IFooterLinks[] = [
     {
         label: "Commander un produit",
-        path: '/shop'
-    },
-    {
-        label: "Nos produits",
-        path: '/products'
+        path: '/market/'
     },
     {
         label: "Nos produits",

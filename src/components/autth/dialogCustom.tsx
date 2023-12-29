@@ -3,8 +3,8 @@ import Dialog, { type DialogProps } from '@mui/material/Dialog'
 import DialogContent from '@mui/material/DialogContent'
 import { type SelectChangeEvent } from '@mui/material/Select'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
-import ButtonCustom from './buttonCustom'
 import { motion } from "framer-motion";
+
 
 export const commonClassNameBtnLastBtnDialog =
   'border-green-400 bg-green-400 hover:bg-white hover:text-green-400 text-white'
@@ -31,18 +31,16 @@ interface IDataPropos {
   mainTitle: string
   lastBtnOptions?: ILastBtnOptions
   mainBtnOptions?: IMainBtnOptions
-  openDilog?: number,
-  hideHeader?: boolean
+  openDilog?: number
 }
 
-export default function DialogCustom({
+export default function DialogCustomAuth({
   width,
   children,
   mainTitle,
   lastBtnOptions,
   mainBtnOptions,
-  openDilog,
-  hideHeader
+  openDilog
 }: PropsWithChildren<IDataPropos>) {
   const [open, setOpen] = React.useState(false)
   const [fullWidth, setFullWidth] = React.useState(true)
@@ -94,28 +92,21 @@ export default function DialogCustom({
           <span>{mainBtnOptions.iconText || ''} </span>
         </span>
       )}
-      {mainBtnOptions?.useBtn && (
-        <ButtonCustom
-          label={mainBtnOptions.btnText || ""}
-          onClick={handleClickOpen}
-          className={`rounded-md ${mainBtnOptions.classNameBtn}`}
-        />
-      )}
       <Dialog
         fullWidth={fullWidth}
         maxWidth={maxWidth}
         open={open}
         onClose={handleClose}
       >
-        {!hideHeader && <div className="flex border-b mx-2 py-2 justify-between items-center">
+        {/* <div className="flex border-b mx-2 py-2 justify-center items-center">
           <h5 className="font-bold">{mainTitle}</h5>
           <AiOutlineCloseCircle
             className="cursor-pointer text-2xl"
             onClick={handleClose}
           />
-        </div>}
+        </div> */}
         <DialogContent className="">
-          <div className="p-4 border shadow rounded-xl">
+          <div className="p-4 border  shadow rounded-xl">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -131,15 +122,9 @@ export default function DialogCustom({
             {lastBtnOptions && (
               <div className="flex justify-end px-5">
                 <div className='text-right'>
-                  <ButtonCustom
+                  <button
                     onClick={handleLastBtn}
-                    label={lastBtnOptions.btnText}
-                    className='bg-secondary-100 p-1 px-5 rounded-full text-white transition hover:text-secondary-100 hover:bg-white border border-transparent hover:border-secondary-100'
-                  />
-                  {/* <button
-                    onClick={handleLastBtn}
-                    className='bg-secondary-100 p-1 px-5 rounded-full text-white transition hover:text-secondary-100 hover:bg-white border border-transparent hover:border-secondary-100'
-                  >{lastBtnOptions.btnText}</button> */}
+                    className=' bg-secondary-100 p-1 px-5 rounded-full text-white transition hover:text-[#ffc132] hover:bg-white border border-transparent hover:border-[#ffc132]'>{lastBtnOptions.btnText}</button>
                 </div>
               </div>
             )}

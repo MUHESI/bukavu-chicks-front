@@ -7,10 +7,8 @@ type Props = {
   selectedPage: SelectedPage;
   // setSelectedPage: (value: SelectedPage) => void;
 };
-
 const Link = ({ link, page, selectedPage }: Props) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
-
   const navigate = useNavigate()
 
   return (
@@ -18,7 +16,6 @@ const Link = ({ link, page, selectedPage }: Props) => {
       className={`cursor-pointer text-white ${selectedPage === lowerCasePage ? "text-primary-100" : ""}
         transition duration-500 hover:text-text-white
       `}
-
       onClick={() => navigate(link)}
     >
       {page}
