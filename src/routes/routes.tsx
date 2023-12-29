@@ -15,7 +15,6 @@ function GlobalRoutes() {
         <Route path="/market/" element={<Market />} />
         <Route path="/detailVision/" element={<DetailVision />} />
         <Route path="/market/commands/" element={<ListCommand />} />
-
       </Routes>
     </div>
   )

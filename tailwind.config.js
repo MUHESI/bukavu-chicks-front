@@ -1,3 +1,5 @@
+const { defaultTheme } = require('./src/styles/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -25,15 +27,15 @@ module.exports = {
         "gray-100": "#DFCCCC",
         "gray-500": "#5E0000",
         // 
-        "primary-100": "#52caff",
+        "primary-100": defaultTheme.colors.primary,
         "primary-300": "#0254f8",
         "primary-500": "#0254f8",
-        "secondary-100": "#ffc132",
+        "secondary-100": defaultTheme.colors.secondary,
         "secondary-400": "#ffc132",
         "secondary-500": "#ffc132",
 
         border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
+        // input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

@@ -1,6 +1,8 @@
 import React from 'react'
 import { dataCommands } from './data'
 import { MdDelete } from "react-icons/md";
+import Auth from '@/components/autth';
+import DialogCustom from '@/components/core/dialogCustom';
 
 function ListCommand() {
     return (
@@ -20,8 +22,21 @@ function ListCommand() {
                             </div>
                         </div>)}
                     <strong className='block text-right my-2'> Total:{dataCommands.total}$ </strong>
-                    <div className='text-right'>
-                        <button className=' bg-secondary-100 p-1 px-5 rounded-full text-white transition hover:text-secondary-100 hover:bg-white border border-transparent hover:border-secondary-100'>Valider</button>
+                    <div className='flex justify-end'>
+                        <DialogCustom
+                            hideHeader={true}
+                            mainTitle=''
+                            width="sm"
+                            mainBtnOptions={
+                                {
+                                    classNameBtn: "bg-secondary-100 p-1 px-5 rounded-full text-white ",
+                                    btnText: "Valider",
+                                    useBtn: true,
+                                }
+                            }
+                        >
+                            <Auth />
+                        </DialogCustom>
                     </div>
                 </main>
             </div>

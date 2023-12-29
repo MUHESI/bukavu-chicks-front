@@ -1,13 +1,14 @@
+// import { colors } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
-// import { purple } from '@mui/material/colors';
+import { defaultTheme } from './colors';
 
 export const createdTheme = createTheme({
     palette: {
         primary: {
-            main: "#52caff",
+            main: defaultTheme.colors.primary,
         },
         secondary: {
-            main: "#ffc132",
+            main: defaultTheme.colors.secondary,
         },
     },
 });
