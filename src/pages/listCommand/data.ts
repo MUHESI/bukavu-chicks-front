@@ -4,7 +4,6 @@ import { MdDelete } from "react-icons/md";
 
 export const dataCommands = {
     total: 60,
-
     products: [
         {
             id: 1,
@@ -31,7 +30,6 @@ export const dataCommands = {
                 {
                     largePrice: 10,
                 },
-
             ],
             tot: 40
         }

@@ -19,6 +19,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/components/home/resumeSection.tsx"],
+  "include": ["src", "src/components/home/ResumeSection.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -7,8 +7,8 @@ import auth_facebookImg from '@/assets/auth_facebook.png'
 import auth_GoogleImg from '@/assets/auth_Google.png'
 import auth_tweetimg from '@/assets/auth_tweet.png'
 import { MdAlternateEmail } from "react-icons/md";
-import { InputAuth } from '@/components/core/Inputs'
 import { BtnAuth, ScreenType, ShowImage } from '.';
+import { InputAuth } from '../core/InputsCustom';
 
 function Login({ handleScreen }: {
     handleScreen: (val: ScreenType) => void

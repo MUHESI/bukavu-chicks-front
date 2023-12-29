@@ -5,9 +5,9 @@ import ArrowImg from "@/assets/Sparkles.png";
 import HomePageTwoChickens from "@/assets/twoChickens.png";
 import Logo from "@/components/Logo";
 import OurVision from "@/components/home/ourVisionSection";
-import Resume from "@/components/home/resumeSection";
+import Resume from "@/components/home/Resume";
 import Products from "@/components/home/productSection";
-import ShowVideo from "@/components/home/videoSection";
+import ShowVideo from "@/components/home/ShowVideoSection";
 
 const HomePage = () => {
     return (
