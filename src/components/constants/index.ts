@@ -15,8 +15,6 @@ export const URL_MEDIA = {
     CHICKENS_IMAGE: "https://res.cloudinary.com/chanel-muhesi/image/upload/v1703199446/poules/poulaller_ey4s47.jpg",
     AVATAR_USER: 'https://res.cloudinary.com/chanel-muhesi/image/upload/v1646826119/cresJoinAfrik/user_ifzful.png',
     USER_IMG_PROFILE2: 'https://res.cloudinary.com/chanel-muhesi/image/upload/v1676725367/porfolio/profile-pic_2_a7jub9.png',
-
-
 }
 
 export const dataCards = [
@@ -210,13 +208,7 @@ export const dataProducts = [
     },
 
 ]
-export const allShop = [
-    {
-        name: "Shop Jenga Mwili Vamaro",
-        city: "Ibanda à Bukavu au Sud",
-        email: "",
-        phone: "",
-    },
+export const shopsData = [
     {
         name: "Shop Jenga Mwili Essence",
         city: "Ibanda à Bukavu au Sud/Coopec Chahi",
@@ -224,7 +216,25 @@ export const allShop = [
         phone: "",
     },
     {
-        name: "Shop Jenga Mwili à Kavumu Centre",
+        name: "Shop Jenga Mwili Nguba",
+        city: "Kabare  Sud Kivu ",
+        email: "",
+        phone: "",
+    },
+    {
+        name: "Shop Jenga Mwili Vamaro",
+        city: "Ibanda à Bukavu au Sud",
+        email: "",
+        phone: "",
+    },
+    {
+        name: "Shop Jenga Mwili Q. Latin",
+        city: "Ibanda à Bukavu au Sud",
+        email: "",
+        phone: "",
+    },
+    {
+        name: "Shop Jenga Mwili Kavumu ",
         city: "Kabare  Sud Kivu ",
         email: "",
         phone: "",
